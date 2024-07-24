@@ -5,12 +5,11 @@ import requests
 import faiss
 import numpy as np
 from bs4 import BeautifulSoup
-from langchain import OpenAI
+from langchain_openai import OpenAI, OpenAIEmbeddings
 from langchain.chains import RetrievalQAWithSourcesChain
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.schema import Document
-from langchain.embeddings import OpenAIEmbeddings
-from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS
 from dotenv import load_dotenv
 
 # Load environment variables
