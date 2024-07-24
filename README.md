@@ -24,38 +24,25 @@ Dotenv: For managing environment variables.
 To set up RockyBot locally, follow these steps:
 
 ##### Clone the Repository
-
-bash
-Copy code
 git clone https://github.com/CertifiedAuthur/rockybot.git
 cd rockybot
 
 ##### Set Up a Virtual Environment
-
-bash
-Copy code
 python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 
 ##### Install Dependencies
-
-bash
-Copy code
 pip install -r requirements.txt
 
 ##### Create a .env File
-
 Create a .env file in the root directory and add your OpenAI API key:
 
-makefile
-Copy code
+##### makefile
 OPENAI_API_KEY=your_openai_api_key_here
 
 ##### Run the Application
-
-bash
-Copy code
 streamlit run app.py
+
 ##### Usage
 Input URLs: Use the sidebar to enter up to three news article URLs.
 Process URLs: Click the "Process URLs" button to scrape and process the content from the entered URLs.
