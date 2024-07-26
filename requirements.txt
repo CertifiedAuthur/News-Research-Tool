@@ -6,3 +6,4 @@ langchain_community
 youtube-transcript-api
 faiss-cpu
 bs4
+python-dotenv
